@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,7 +18,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        
+
+        StartingAnimationInScene();
+
     }
 
     // Update is called once per frame
@@ -56,6 +59,14 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("AnimMoveMagnitude", moveDir.magnitude);
         anim.SetFloat("AnimLastMoveX", lastMoveDir.x);
         anim.SetFloat("AnimLastMoveY", lastMoveDir.y);
+    }
+
+    void StartingAnimationInScene()
+    {
+        if(SceneManager.GetActiveScene().name == "Room1")
+        {
+            lastMoveDir.y = 1;
+        }
     }
 
 }
