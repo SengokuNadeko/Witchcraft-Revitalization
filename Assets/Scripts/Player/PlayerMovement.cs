@@ -7,8 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
 
+    private string SceneName;
+    private string lastSceneName;
+
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
+
+    private bool leftRoom1;
 
     Rigidbody2D rb;
     Animator anim;
@@ -21,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         StartingAnimationInScene();
 
+        Debug.Log(lastSceneName);
     }
 
     // Update is called once per frame
@@ -28,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Inputs();
         Animate();
+        PositionChecker();
     }
 
     void FixedUpdate()
@@ -69,4 +76,41 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void PositionChecker()
+    {
+        if(SceneManager.GetActiveScene().name == "SampleScene" && lastSceneName == "Room1")
+        {
+            this.transform.position = new Vector3(-3.5f, -0.2f, 0);
+        }
+
+        Debug.Log("Position set");
+    }
+    
+    public void EnterRoom()
+    {
+        SceneManager.LoadScene(SceneName);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Room1 Tag"))
+        {
+            SceneName = "Room1";
+            lastSceneName = "SampleScene";
+        }
+
+        else if (collision.gameObject.CompareTag("Room1 Leave"))
+        {
+            SceneName = "SampleScene";
+            lastSceneName = "Room1";
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Room1 Tag"))
+        {
+            SceneName = null;
+        }
+    }
 }
