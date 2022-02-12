@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EnterBuilding : MonoBehaviour
+public class Enter_Building_1 : MonoBehaviour
 {
     public void EnterRoom()
     {

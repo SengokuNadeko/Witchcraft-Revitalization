@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LeaveBuilding : MonoBehaviour
+public class Leave_Building_1 : MonoBehaviour
 {
     public void LeaveRoom()
     {

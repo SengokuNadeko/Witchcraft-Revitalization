@@ -133,10 +133,14 @@ PrefabInstance:
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4268631893984028243}
+      objectReference: {fileID: 1532918160}
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Enter_Building_1, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: m_RootOrder
@@ -198,10 +202,14 @@ PrefabInstance:
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4268631893984028243}
+      objectReference: {fileID: 7799337578223167100}
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Enter_Building_1, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: m_RootOrder
@@ -268,10 +276,14 @@ PrefabInstance:
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4268631893984028243}
+      objectReference: {fileID: 190846021}
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Enter_Building_1, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: m_RootOrder
@@ -600,6 +612,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+--- !u!1 &190846020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658159837066450997, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+  m_PrefabInstance: {fileID: 190846019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190846021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190846020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad9a13e55f02114ba0b11c8a1d2fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &202955551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,10 +1624,14 @@ PrefabInstance:
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4268631893984028243}
+      objectReference: {fileID: 1639425589}
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Enter_Building_1, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: m_RootOrder
@@ -2602,6 +2635,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+--- !u!1 &1532918159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658159837066450997, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+  m_PrefabInstance: {fileID: 1532918158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1532918160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532918159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad9a13e55f02114ba0b11c8a1d2fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1639425587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2659,6 +2709,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+--- !u!1 &1639425588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658159837066450997, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+  m_PrefabInstance: {fileID: 1639425587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1639425589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639425588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad9a13e55f02114ba0b11c8a1d2fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1680719943
 GameObject:
   m_ObjectHideFlags: 0
@@ -21618,17 +21685,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f504c420b880344a95319c31897648c, type: 3}
---- !u!114 &4268631893984028243 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6005383820700972082, guid: 6f504c420b880344a95319c31897648c, type: 3}
-  m_PrefabInstance: {fileID: 4268631893984028242}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad9a13e55f02114ba0b11c8a1d2fd43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7799337578223167098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21686,6 +21742,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+--- !u!1 &7799337578223167099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658159837066450997, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+  m_PrefabInstance: {fileID: 7799337578223167098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7799337578223167100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799337578223167099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad9a13e55f02114ba0b11c8a1d2fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8160203813342492656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21753,7 +21826,7 @@ PrefabInstance:
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4268631893984028243}
+      objectReference: {fileID: 2037445269}
     - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterRoom
