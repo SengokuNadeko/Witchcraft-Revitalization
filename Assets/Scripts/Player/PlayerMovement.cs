@@ -9,8 +9,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
 
-    public GameObject interactable;
-
     Rigidbody2D rb;
     Animator anim;
 
@@ -25,11 +23,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            CheckInteraction();
-        }
-
         Inputs();
         Animate();
     }
@@ -65,18 +58,4 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("AnimLastMoveY", lastMoveDir.y);
     }
 
-    public void OpenInteractable()
-    {
-        interactable.SetActive(true);
-    }
-
-    public void CloseInteractable()
-    {
-        interactable.SetActive(false);
-    }
-
-    public void CheckInteraction()
-    {
-
-    }
 }
