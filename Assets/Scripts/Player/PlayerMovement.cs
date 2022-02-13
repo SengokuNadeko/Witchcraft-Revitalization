@@ -7,13 +7,10 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
 
-    private string SceneName;
-    private string lastSceneName;
-
     private Vector2 moveDir;
     private Vector2 lastMoveDir;
 
-    private bool leftRoom1;
+    private static string lastScene;
 
     Rigidbody2D rb;
     Animator anim;
@@ -23,10 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
-        StartingAnimationInScene();
-
-        Debug.Log(lastSceneName);
     }
 
     // Update is called once per frame
@@ -34,12 +27,31 @@ public class PlayerMovement : MonoBehaviour
     {
         Inputs();
         Animate();
-        PositionChecker();
     }
 
     void FixedUpdate()
     {
         Move();
+    }
+
+    public void SetLastMoveDir(float x, float y)
+    {
+        lastMoveDir = new Vector2(x, y);
+    }
+
+    public void SetPlayerPos(float x, float y)
+    {
+        this.gameObject.transform.position = new Vector2(x, y);
+    }
+
+    public void SetLastScene(string name)
+    {
+        lastScene = name;
+    }
+
+    public string GetLastScene()
+    {
+        return lastScene;
     }
 
     void Inputs()
@@ -66,51 +78,5 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("AnimMoveMagnitude", moveDir.magnitude);
         anim.SetFloat("AnimLastMoveX", lastMoveDir.x);
         anim.SetFloat("AnimLastMoveY", lastMoveDir.y);
-    }
-
-    void StartingAnimationInScene()
-    {
-        if(SceneManager.GetActiveScene().name == "Room1")
-        {
-            lastMoveDir.y = 1;
-        }
-    }
-
-    void PositionChecker()
-    {
-        if(SceneManager.GetActiveScene().name == "SampleScene" && lastSceneName == "Room1")
-        {
-            this.transform.position = new Vector3(-3.5f, -0.2f, 0);
-        }
-
-        Debug.Log("Position set");
-    }
-    
-    public void EnterRoom()
-    {
-        SceneManager.LoadScene(SceneName);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Room1 Tag"))
-        {
-            SceneName = "Room1";
-            lastSceneName = "SampleScene";
-        }
-
-        else if (collision.gameObject.CompareTag("Room1 Leave"))
-        {
-            SceneName = "SampleScene";
-            lastSceneName = "Room1";
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Room1 Tag"))
-        {
-            SceneName = null;
-        }
     }
 }
