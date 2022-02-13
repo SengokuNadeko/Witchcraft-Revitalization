@@ -453,6 +453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8859194570616371191, guid: 6fb72c7c292a62e42a591ba9ef0c529f, type: 3}
+      propertyPath: ObjTag
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fb72c7c292a62e42a591ba9ef0c529f, type: 3}
 --- !u!1 &167883388
@@ -997,9 +1001,10 @@ GameObject:
   m_Component:
   - component: {fileID: 504858897}
   - component: {fileID: 504858896}
+  - component: {fileID: 504858898}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: MusicTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1114,6 +1119,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &504858898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504858895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1772d7287c552c44bce611ed47b1016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjTag: MusicTag
 --- !u!1 &605023334
 GameObject:
   m_ObjectHideFlags: 0

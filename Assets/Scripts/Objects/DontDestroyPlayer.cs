@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DontDestroyPlayer : MonoBehaviour
 {
+    public string ObjTag;
     // Start is called before the first frame update
     private void Awake()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject[] objs = GameObject.FindGameObjectsWithTag(ObjTag);
 
-        if (players.Length > 1)
+        if (objs.Length > 1)
         {
             Destroy(this.gameObject);
         }
