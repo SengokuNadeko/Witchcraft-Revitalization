@@ -16,7 +16,7 @@ TagManager:
   - Tiles Layer
   - Actor Layer
   - Collision Layer
-  - 
+  - UI Layer
   - 
   - 
   - 
@@ -51,4 +51,7 @@ TagManager:
     locked: 0
   - name: Collision Layer
     uniqueID: 1678044205
+    locked: 0
+  - name: UI Layer
+    uniqueID: 3554673173
     locked: 0
