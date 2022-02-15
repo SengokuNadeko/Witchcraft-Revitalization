@@ -17,7 +17,7 @@ TagManager:
   - Actor Layer
   - Collision Layer
   - UI Layer
-  - 
+  - Text Layer
   - 
   - 
   - 
@@ -54,4 +54,7 @@ TagManager:
     locked: 0
   - name: UI Layer
     uniqueID: 3554673173
+    locked: 0
+  - name: Text Layer
+    uniqueID: 3497759003
     locked: 0
