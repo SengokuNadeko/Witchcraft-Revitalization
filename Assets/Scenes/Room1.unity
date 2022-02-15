@@ -860,7 +860,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1446680599}
-  - {fileID: 1709175163}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -919,13 +918,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: Entrance2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interactionKey
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 226202852}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeaveRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Leave_Building_1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6115767861485015365, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
 --- !u!4 &226202850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 47638702384310698, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
   m_PrefabInstance: {fileID: 226202849}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &226202851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658159837066450997, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+  m_PrefabInstance: {fileID: 226202849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &226202852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226202851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64d63b95a695554f99b60b7c33055f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &229015614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,17 +1084,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &272656035 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2886089903314130003, guid: 1e8742fff8bd26142bc8c0f0866d2c11, type: 3}
-  m_PrefabInstance: {fileID: 2886089903041491696}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b64d63b95a695554f99b60b7c33055f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &309276568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,11 +2219,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &958351699 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-  m_PrefabInstance: {fileID: 1391788710}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &975282091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,96 +2987,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1391788710
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1709175163}
-    m_Modifications:
-    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 272656035}
-    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LeaveRoom
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LeaveBuilding, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458037, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Radius
-      value: 0.8822636
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458037, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458037, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 235.87772
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458039, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Name
-      value: InteractCircle2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458039, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
---- !u!4 &1398769956 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-  m_PrefabInstance: {fileID: 1539097419}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1400337069
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,13 +3090,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: Entrance1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interactionKey
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1411344969}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeaveRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Leave_Building_1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878507272853639902, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6115767861485015365, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
 --- !u!4 &1411344967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 47638702384310698, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
   m_PrefabInstance: {fileID: 1411344966}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1411344968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658159837066450997, guid: 7ddef76fe52fb6b4c81647ffb1096f44, type: 3}
+  m_PrefabInstance: {fileID: 1411344966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1411344969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411344968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64d63b95a695554f99b60b7c33055f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1446680598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,91 +3288,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1539097419
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1709175163}
-    m_Modifications:
-    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 272656035}
-    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LeaveRoom
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458036, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LeaveBuilding, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458037, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Radius
-      value: 0.8822636
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458037, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458037, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.84833777
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 235.87772
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458038, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458039, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_Name
-      value: InteractCircle1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282941351759458039, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4bc84e2f5099508468be69a250429ddf, type: 3}
 --- !u!1 &1622639731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,38 +3550,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1709175162
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1709175163}
-  m_Layer: 0
-  m_Name: Interactable Circles
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1709175163
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709175162}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1398769956}
-  - {fileID: 958351699}
-  m_Father: {fileID: 225657811}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1779816397
 GameObject:
   m_ObjectHideFlags: 0
